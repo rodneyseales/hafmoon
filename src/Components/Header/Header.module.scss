@@ -1,0 +1,34 @@
+@import '../../Constants/variables.scss';
+@import './HeaderAnimation.scss';
+
+header {
+  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($darkBlue, 0.5)),
+    url('../../Assets/Images/landingimages/seaboat.jpg');
+  height: 50vh;
+  background-size: cover;
+  background-position: top;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.headingPrimary {
+  font-size: 7.2rem;
+  letter-spacing: 2rem;
+  animation: moveLeft 2s;
+}
+.headingSecondary {
+  font-size: 3.2rem;
+  letter-spacing: 0.75rem;
+  animation: moveDown .5s 3s;
+  animation-fill-mode: backwards;
+}

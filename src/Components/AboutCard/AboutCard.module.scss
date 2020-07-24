@@ -1,0 +1,58 @@
+@import "../../Constants/variables.scss";
+
+.AboutSectionCard {
+  background-color: rgba(white, 0.7);
+  width: 50rem;
+  height: 50rem;
+  margin-top: 10rem;
+  margin-right: 15rem;
+  border-radius: 1rem;
+  color: $lightBlack;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: rgba($lightBlue, 0.7);
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  &:hover .iconstyle {
+    fill: white;
+    filter: drop-shadow(2px 2px 10px rgba(black, 0.7));
+  }
+  &:hover &Heading {
+    text-shadow: 2px 2px 1px rgba(black, 0.7);
+  }
+
+  &Heading {
+    color: inherit;
+    font-size: 3.6rem;
+    font-weight: 600;
+  }
+
+  &Content {
+    margin-top: 0.5rem;
+    color: inherit;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+
+  &Icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: -0.5rem;
+  }
+}
+
+.iconstyle {
+  fill: $lightBlack;
+  width: 8rem;
+  height: 8rem;
+  filter: drop-shadow(2px 2px 10px rgba($darkBlue, 0.7));
+}
